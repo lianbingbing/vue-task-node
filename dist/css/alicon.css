@@ -1,0 +1,45 @@
+@font-face {font-family: "icon";
+  src: url('alicon.eot?t=1597742504264'); /* IE9 */
+  src: url('alicon.eot?t=1597742504264#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAARUAAsAAAAACXwAAAQHAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDbAqFKIQWATYCJAMgCxIABCAFhD0HgSAbEAgRFZwisi8xdm0gYYIiRZCssAEJDADE0bcWxORui+WG9oLmbTtBDJYvEEE1Vvbs7iG4B3fu1LMlS+qDEtAl5YFVYmycJ2GSvYCwpJM7HL6VQtQ8sewesBQALdX5yezHuc8cEL+7EaD67La0fenPFUMD9qcGRBYVoUMWdnoJ+AdswDVvFY2zaLAugVnZxqO25ArRAp7P/uePpV6UnsC7/ABwkU0VNYHEgXZiBcHaNrAJ+obpBQ/G5YsJdG1aipNenyJS2FsF4tG6lKigVzqooa1qNhxYxAcN7fQujffR68dvW9EmaWT2jhd3Vjik6ni1yE//uxlgCJazgh1GxhKFeNtof56T0FLW1a9WXIKhtqRZx3W9HtSzem21+P+/SDqtt51h6GDH/+JRNGRNIWkRTVDex8Rb4RZ17CEKdR3RoB4gMvUU0aSeIYJ6DZFYLUq0QDvYcIwJPopNnaxzZXKYQ1PqN1nGOWd0fqW/dp+/pz99S32pma+ruO1QKjM/XUmst9I5N7NdcC0OlGTht1q8i3dV4ZGbtfrSQ110/Nn8EuX16ANy61Bb0SHZEGckJXtk6YPbe6Xdu5VH76Nn7zG8ZRNyuWHyrZTGe9ZDeSZ14NZckc0cOrZbydLZw0ObrjQFRXveVIDiT47WaPTF2WqvXv9/+/VMdFNeNE3JR8yBXF+cvUn/aSd6s1uV7g1f8w3YJDeHnPFWEvb2mWhHAnn3B9qwYYVvSW8t9g/Zedhhwwvfkd6YrcP2aaqbl5LTicao0o3QX1b6p3w+D9D9eHG8J/a/SOW0mWDOwr8poVMyHY5HzrJr+ZGtLt1zbzqdTX6d1fdZHL/RrXxwblk61Ua/oufadIIhACBkIhdtfppdtJgQgHxYeP+3+RlMdEpuqJv/rzwKAPjSxxVYQiigPIV3r8BgwU8iGNhHNUS2gVm09rwNQQIwOZTCPdWC7cwBfg632PcllbLBmQAJlSwDMgYVUFAZsVSiFWg4nEBH5QU2j1mHc0hYRUilA3AzAEiYFkDGtwIKpj2WSrwDjdwToGP6Alvmzwk57DGncplEqtEBaytwOwqZq9OVcXICXeNTyXmeP4NSceiDKRMn56OrMEQ5ZRe1yZ2qNQMmowBWjr4c+n4EsYwG0dYT81rHcydNYk0PNNGOAlIpLpFqdIC1FXA7Clng1pWV7RPoGp/KBlFkzSCUKs6DuWCKiSZ3YFfJw86mW+2uNrlTac0AMzKjAKzc3Iq+E4pA3LzeINp6ovyEQDzXJDSMDZVP3FYZXNF5AGz232BGihwlGtGMVrSjQ/SEKm9CGDk4QRnbRqXqKytJE/LQrSPLY2oU9vduplx3nqTG4jTSXOWN4DQstSl3wvolihjlPjqEAA==') format('woff2'),
+  url('alicon.woff?t=1597742504264') format('woff'),
+  url('alicon.ttf?t=1597742504264') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('alicon.svg?t=1597742504264#icon') format('svg'); /* iOS 4.1- */
+}
+
+.icon {
+  font-family: "icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.task-node-success:before {
+  content: "\e64e";
+}
+
+.task-node-runing:before {
+  content: "\e659";
+}
+
+.task-node-pause:before {
+  content: "\e638";
+}
+
+.task-node-waiting:before {
+  content: "\e610";
+}
+
+.biaotishuqian:before {
+  content: "\e61c";
+}
+
+.caidan:before {
+  content: "\e64d";
+}
+
+.task-node-failed:before {
+  content: "\e725";
+}
+

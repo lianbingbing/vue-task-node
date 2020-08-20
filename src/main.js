@@ -3,6 +3,8 @@ import Vuex from 'vuex'
 import App from './App'
 import {TaskNode, TaskNodeStore} from './lib/index'
 import '../dist/css/vnode.css'
+import '../dist/css/alicon.css'
+
 // import '../src/lib/styles/index.less'
 Vue.config.productionTip = false
 Vue.use(TaskNode)

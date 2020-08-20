@@ -1,5 +1,5 @@
 <template>
-<node :node="node" width=180 height=30 v-on:on-select="selectNodeMethod" v-on:on-drag-ging="dragGing" v-on:on-drag-start="dragStart" v-on:on-drag-end="dragEnd" v-on:updateTem="updateTemp" v-on:on-mouse="mouseMenu">
+<node :node="node" width=200 height=30 v-on:on-select="selectNodeMethod" v-on:on-drag-ging="dragGing" v-on:on-drag-start="dragStart" v-on:on-drag-end="dragEnd" v-on:updateTem="updateTemp" v-on:on-mouse="mouseMenu">
   <div :class="classes">
     <span :class="iconCls +' '+ [node.icon ? node.icon : 'task-icon-53']"></span>
     <span :class="nameCls">{{node.name}}</span>
@@ -50,7 +50,7 @@ export default {
       icon: [String, Number],
       state: {
         type: [String, Number],
-        default: 'ready'
+        default: 1
       },
       inPorts: {
         type: Array,
@@ -92,18 +92,38 @@ export default {
   methods: {
     stateCls (value) {
       switch (value) {
-        case 'success':
-          return 'task-icon-ok'
-        case 'running':
-          return 'task-icon-run'
-        case 'ready':
-          return 'task-icon-wait'
-        case 'mistake':
-          return 'task-icon-error'
+        case 1: //等待中
+          return "icon task-node-waiting state-await-color";
+        case 2: //运行中
+          return "icon task-node-running state-running-color";
+        case 3: //已中止
+          return "icon task-node-pause state-pause-color";
+        case 4: //成功
+          return "icon task-node-success state-success-color";
+        case 5: //失败
+          return "icon task-node-failed state-failed-color";
         default:
-          return 'task-icon-wait'
+          //未运行
+          return "icon task-node-waiting state-await-color";
       }
     }
   }
 }
 </script>
+<style lang="scss" scoped>
+.state-success-color {
+  color: #67c23a;
+}
+.state-failed-color {
+  color: #f56c6c;
+}
+.state-pause-color {
+  color: #e6a23c;
+}
+.state-running-color {
+  color: #2b7bbb;
+}
+.state-await-color {
+  color: #909399;
+}
+</style>
